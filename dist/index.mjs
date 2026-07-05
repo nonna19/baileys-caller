@@ -22,10 +22,10 @@ export { CallState } from "./types.mjs";
 const SHA256_LEN = 32;
 const loadBaileys = async () => {
     try {
-        return await import("@whiskeysockets/baileys");
+        return await import("baileys");
     }
     catch {
-        throw new Error("Could not import @whiskeysockets/baileys. Install it as a peer dependency.");
+        throw new Error("Could not import baileys. Install it as a peer dependency.");
     }
 };
 const toBareJid = (jid) => {
